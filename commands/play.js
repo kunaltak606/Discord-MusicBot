@@ -97,7 +97,7 @@ module.exports = {
             const queue = message.client.queue.get(message.guild.id);
             if (!song) {
                 
-                message.guild.me.voice.channel.leave(); //If you want your bot stay in vc 24/7 remove this line :D
+                
                 message.client.queue.delete(message.guild.id);
                 return;
             }
